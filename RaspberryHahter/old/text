@@ -1,0 +1,61 @@
+##Для первой скорости
+    if (int(mapSpeadH) == 1):
+       SpeadRight = FIRST_1
+       nR = 1
+    if int(mapSpeadH) == -1:
+       SpeadRight = FIRST_1
+       nR = 2
+    if int(mapSpeadH) == 0:
+       SpeadRight = 0
+       nR = 0
+
+    if (int(mapSpeadV) == 1):
+       SpeadLeft = FIRST_1
+       nL = 1
+    if int(mapSpeadV) == -1:
+       SpeadLeft = FIRST_1
+       nL = 2
+    if int(mapSpeadV) == 0:
+       SpeadLeft = 0
+       nL = 0
+#Для второй сткорости
+    if (int(mapSpeadH) == 2):
+       SpeadRight = FIRST_2
+       nR = 1
+    if int(mapSpeadH) == -2:
+       SpeadRight = FIRST_2
+       nR = 2
+    if int(mapSpeadH) == 0:
+       SpeadRight = 0
+       nR = 0
+
+    if (int(mapSpeadV) == 2):
+       SpeadLeft = FIRST_2
+       nL = 1
+    if int(mapSpeadV) == -2:
+       SpeadLeft = FIRST_2
+       nL = 2
+    if int(mapSpeadV) == 0:
+       SpeadLeft = 0
+       nL = 0
+
+#Для третей скорости
+    if (int(mapSpeadH) == 3):
+       SpeadRight = FIRST_3
+       nR = 1
+    if int(mapSpeadH) == -3:
+       SpeadRight = FIRST_3
+       nR = 2
+    if int(mapSpeadH) == 0:
+       SpeadRight = 0
+       nR = 0
+
+    if int(mapSpeadV) == 3:
+       SpeadLeft = FIRST_3
+       nL = 1
+    if int(mapSpeadV) == -3:
+       SpeadLeft = FIRST_3
+       nL = 2
+    if int(mapSpeadV) == 0:
+       SpeadLeft = 0
+       nL = 0

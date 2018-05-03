@@ -1,0 +1,26 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2017
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "StrimRaspberry", "StrimRaspberry.csproj", "{C1477CA5-A018-ABA9-F3B4-41B7D27F956E}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "StrimRaspberry.Editor", "StrimRaspberry.Editor.csproj", "{547A9853-C390-7C39-611A-365C09621ED5}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{C1477CA5-A018-ABA9-F3B4-41B7D27F956E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C1477CA5-A018-ABA9-F3B4-41B7D27F956E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C1477CA5-A018-ABA9-F3B4-41B7D27F956E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C1477CA5-A018-ABA9-F3B4-41B7D27F956E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{547A9853-C390-7C39-611A-365C09621ED5}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{547A9853-C390-7C39-611A-365C09621ED5}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{547A9853-C390-7C39-611A-365C09621ED5}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{547A9853-C390-7C39-611A-365C09621ED5}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal
