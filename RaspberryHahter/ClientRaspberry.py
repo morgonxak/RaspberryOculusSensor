@@ -10,7 +10,7 @@ def getDataServer(sock):
 
 def ConnectServer():
     sock = socket.socket()
-    sock.connect(('192.168.0.84', 8599))
+    sock.connect(('192.168.0.82', 8599))
     return sock
 
 def DisconectServer(sock):

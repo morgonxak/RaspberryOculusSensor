@@ -21,10 +21,10 @@ def dataAcceptance(conn):
 def connect(conn,addr):
     global connUnity,connRaspberry
     if addr[0] == '127.0.0.1':
-        print("Parser - Unity")
+        print("Connect - Unity")
         connUnity = conn
     else:
-        print("Parser - raspberry")
+        print("Connect - raspberry")
         connRaspberry = conn
 
 def mainLoop():
@@ -33,7 +33,7 @@ def mainLoop():
     while 1:
         data = None
         data = dataAcceptance(connUnity)
-        print(data)
+        #print(data)
         if data != '':
             if data == 'D':
                 #print("Dat --- Ok")
@@ -59,6 +59,8 @@ def StopServer():
     if connUnity !=None:
         connUnity.close()
         print("stop connect Unity")
+    connUnity = None
+    connRaspberry = None
 
 
 if __name__ == '__main__':  # Program start from here
@@ -72,7 +74,18 @@ if __name__ == '__main__':  # Program start from here
         try:
             connect(conn, addr)
             if (connUnity != None) and (connRaspberry != None):
-                mainLoop()
+                try:
+                    mainLoop()
+                except BaseException:
+                    print("ERROR")
+                    StopServer()
+
+                    ## Перезапуск сервера
+                    sock = socket.socket()
+                    sock.bind(('', 8599))
+                    sock.listen(2)
+                    ##
         except KeyboardInterrupt:  # When 'Ctrl+C' is pressed, the child program destroy() will be  executed.
             StopServer()
+
 

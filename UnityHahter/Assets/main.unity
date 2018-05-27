@@ -299,7 +299,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a6225f3d2962b244182a4efb1c726838, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  streamAddress: http://192.168.0.42:8080/?action=stream
+  streamAddress: http://192.168.1.237:8080/?action=stream
 --- !u!23 &325856968
 MeshRenderer:
   m_ObjectHideFlags: 0
